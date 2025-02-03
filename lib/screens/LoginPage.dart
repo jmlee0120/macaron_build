@@ -1,13 +1,13 @@
-// log1 페이지 플러터 코드
-
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-  final TextEditingController idController = TextEditingController();
-  final TextEditingController passwordController = TextEditingController();
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final TextEditingController emailController = TextEditingController();
+    final TextEditingController passwordController = TextEditingController();
+
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -17,7 +17,7 @@ class LoginPage extends StatelessWidget {
             Navigator.pop(context);
           },
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.white,         
         elevation: 0.0,
       ),
       body: Padding(
@@ -48,7 +48,7 @@ class LoginPage extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             TextField(
-              controller: idController,
+              controller: emailController, //
               textAlign: TextAlign.left,
               decoration: InputDecoration(
                 hintText: '아이디',

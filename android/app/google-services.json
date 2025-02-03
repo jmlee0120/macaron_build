@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "727038129600",
+    "project_id": "macaron-73590",
+    "storage_bucket": "macaron-73590.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727038129600:android:f359c6956f3eaba3e30425",
+        "android_client_info": {
+          "package_name": "com.example.macaron_build"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf-lW-cGCbOuL1qa5cP-OjXxFGrdBSZDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
