@@ -11,13 +11,16 @@ import 'package:macaron_build/services/auth_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized(); // flutter 엔진과 위젯 시스템을 초기화
-  await Firebase.initializeApp(  //firebase 앱을 초기화하여 firebase 기능을 사용할 준비
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  
-  Get.put(AuthService()); // AuthService 주입
-  
-  runApp(const MyApp()); // flutter 앱 실행
+  try {
+    await Firebase.initializeApp( //firebase 앱을 초기화하여 firebase 기능을 사용할 준비
+
+    );
+    Get.put(AuthService());
+
+    runApp(const MyApp()); // flutter 앱 실행
+  } catch (e) {
+    print('Firebase initialization error: $e');
+  }
 }
 
 class DefaultFirebaseOptions {
@@ -33,12 +36,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Macaron Build',
       initialBinding: BindingsBuilder(() {
-        Get.put(AuthService());
+
       }),
       initialRoute: '/',
       getPages: [
-        GetPage(name: '/', page: () => const App()),
-        GetPage(name: '/login', page: () => const LoginPage()),
+        GetPage(name: '/', page: () => MainBoard()),
+
       ],
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
