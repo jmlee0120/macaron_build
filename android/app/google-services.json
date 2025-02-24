@@ -12,7 +12,20 @@
           "package_name": "com.example.macaron_build"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "727038129600-t08aucouj5jnqelho2b245pf31s30ujs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.macaron_build",
+            "certificate_hash": "f50b6e1e0f1922932954b9ee805d4ce713541333"
+          }
+        },
+        {
+          "client_id": "727038129600-uv1mfqg1h3ljjdovk0ia98oarv8i4st0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDf-lW-cGCbOuL1qa5cP-OjXxFGrdBSZDY"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727038129600-uv1mfqg1h3ljjdovk0ia98oarv8i4st0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "727038129600-939urd6pd0jg8euk1lo9pq25254qu92g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.macaronBuild"
+              }
+            }
+          ]
         }
       }
     }
