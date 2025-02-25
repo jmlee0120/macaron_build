@@ -34,14 +34,14 @@ class MyApp extends StatelessWidget {
       title: 'Macaron Build',
 
       // ✅ 사용자 상태에 따라 초기 라우트 설정
-      /*initialRoute: Get.find<AuthService>().user.value != null ? '/main' : '/welcome',*/
+      initialRoute: Get.find<AuthService>().user.value != null ? '/main' : '/welcome',
 
       // ✅ GetX 의존성 주입 (initialBinding)
       initialBinding: BindingsBuilder(() {
         Get.put(AuthService());
       }),
 
-      initialRoute: '/welcome',  // 로그인 상태와 관계없이 WelcomePage로 시작
+      // initialRoute: '/welcome',  // 로그인 상태와 관계없이 WelcomePage로 시작
 
       // ✅ GetX 라우터 설정
       getPages: [
